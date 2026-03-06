@@ -256,8 +256,8 @@ app.use('/uploads/avatars', (req, res, next) => {
   }
 });
 const loginLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 5,
+  windowMs: 1 * 60 * 1000,
+  max: 20,
   standardHeaders: true,
   legacyHeaders: false,
   handler: (req, res) => {
