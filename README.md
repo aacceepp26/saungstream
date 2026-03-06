@@ -42,7 +42,7 @@ Install Git:
 sudo apt install git -y
 ```
 
-### 2. Setup Project StreamFlow
+### 2. Setup Project
 
 Clone repository:
 ```bash
@@ -262,6 +262,7 @@ pm2 restart streamflow
 **Production (HTTPS):**
 - Set `NODE_ENV=production`
 - Akses melalui HTTPS untuk cookie session
+
 
 
 
