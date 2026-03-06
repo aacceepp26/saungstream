@@ -1,54 +1,3 @@
-<div align="center">
-
-![logo](https://github.com/user-attachments/assets/83d95886-2fbb-45c7-986a-e6c4d053bc55)
-
-## StreamFlow: Web-Based Multi-Platform Streaming
-
-[![Version](https://img.shields.io/badge/version-2.2.0-blue.svg)](https://github.com/bangtutorial/streamflow/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/bangtutorial/streamflow/blob/main/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bangtutorial/streamflow/blob/main/CONTRIBUTING.md)
-[![GitHub Stars](https://img.shields.io/github/stars/bangtutorial/streamflow?style=social)](https://github.com/bangtutorial/streamflow/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/bangtutorial/streamflow?style=social)](https://github.com/bangtutorial/streamflow/network/members)
-
-**StreamFlow** adalah platform live streaming berbasis web yang powerful dan mudah digunakan. Streaming ke YouTube, Facebook, dan platform RTMP lainnya secara bersamaan dengan satu aplikasi. Dilengkapi dengan video management, scheduled streaming, dan real-time monitoring untuk pengalaman streaming yang profesional.
-
-[🚀 Installation](#-quick-installation) • [📖 Documentation](#-manual-installation) • [🐳 Docker](#-docker-deployment) • [🪛 Troubleshooting](#-troubleshooting) • [💬 Community](https://github.com/bangtutorial/streamflow/discussions)
-
-![screenshot](https://github.com/user-attachments/assets/fef1c0a5-04f6-41ae-8ea1-5eb1fff13a22)
-
-
-
-</div>
-
----
-
-## ✨ Fitur Utama
-
-- **Multi-Platform Streaming** - Streaming ke berbagai platform populer secara bersamaan
-- **Video Gallery** - Kelola koleksi video dengan antarmuka yang intuitif
-- **Upload Video** - Upload dari local storage atau import langsung dari Google Drive
-- **Scheduled Streaming** - Jadwalkan streaming dengan pengaturan waktu yang fleksibel
-- **Advanced Settings** - Kontrol penuh untuk bitrate, resolusi, FPS, dan orientasi video
-- **Real-time Monitoring** - Monitor status streaming dengan dashboard real-time
-- **Video Analytics** - Pantau statistik dan performa video langsung dari aplikasi
-- **Responsive UI** - Antarmuka modern yang responsif di semua perangkat
-
-## 💻 System Requirements
-
-- **Node.js** v18 atau versi terbaru
-- **FFmpeg** untuk video processing
-- **SQLite3** (sudah termasuk dalam package)
-- **VPS/Server** dengan minimal 1 Core CPU & 1GB RAM
-- **Port** 7575 (dapat disesuaikan di file [.env](.env))
-
-## ⚡ Quick Installation
-
-Untuk instalasi otomatis, jalankan perintah berikut:
-
-```bash
-curl -o install.sh https://raw.githubusercontent.com/bangtutorial/streamflow/main/install.sh && chmod +x install.sh && ./install.sh
-```
-
 ## 🔧 Manual Installation
 
 ### 1. Persiapan Server
@@ -85,16 +34,16 @@ Install Git:
 sudo apt install git -y
 ```
 
-### 2. Setup Project StreamFlow
+### 2. Setup Project saungstream
 
 Clone repository:
 ```bash
-git clone https://github.com/bangtutorial/streamflow
+git clone https://github.com/aacceepp26/saungstream
 ```
 
 Masuk ke direktori project:
 ```bash
-cd streamflow
+cd saungstream
 ```
 
 Install Paket Node.JS:
@@ -159,7 +108,7 @@ sudo npm install -g pm2
 
 Jalankan aplikasi dengan PM2:
 ```bash
-pm2 start app.js --name streamflow
+pm2 start app.js --name saungstream
 ```
 
 **Setup Auto-Restart saat Server Reboot:**
@@ -183,13 +132,13 @@ pm2 save
 pm2 status
 
 # Restart aplikasi
-pm2 restart streamflow
+pm2 restart saungstream
 
 # Stop aplikasi
-pm2 stop streamflow
+pm2 stop saungstream
 
 # Lihat logs aplikasi
-pm2 logs streamflow
+pm2 logs saungstream
 
 # Monitor resource usage
 pm2 monit
@@ -208,7 +157,7 @@ Contoh: `http://88.12.34.56:7575`
 Jika lupa password atau perlu reset akun:
 
 ```bash
-cd streamflow && node reset-password.js
+cd saungstream && node reset-password.js
 ```
 
 ## ⏰ Pengaturan Timezone Server
@@ -232,7 +181,7 @@ sudo timedatectl set-timezone Asia/Jakarta
 
 ### Restart aplikasi setelah mengubah timezone:
 ```bash
-pm2 restart streamflow
+pm2 restart saungstream
 ```
 
 ## 🐳 Docker Deployment
@@ -289,7 +238,7 @@ sudo kill -9 <PID>
 rm db/*.db
 
 # Restart aplikasi untuk membuat database baru
-pm2 restart streamflow
+pm2 restart saungstream
 ```
 
 ### Docker Troubleshooting
@@ -305,16 +254,4 @@ pm2 restart streamflow
 **Production (HTTPS):**
 - Set `NODE_ENV=production`
 - Akses melalui HTTPS untuk cookie session
-
-## 💫 Contributors
-
-[![Contributors](https://contrib.rocks/image?repo=bangtutorial/streamflow)](https://github.com/bangtutorial/streamflow/graphs/contributors)
-
-## 📄 License
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/bangtutorial/streamflow/blob/main/LICENSE)
-
----
-© 2026 - [Bang Tutorial](https://youtube.com/bangtutorial)
-
 
