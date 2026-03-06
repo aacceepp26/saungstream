@@ -256,8 +256,8 @@ app.use('/uploads/avatars', (req, res, next) => {
   }
 });
 const loginLimiter = rateLimit({
-  windowMs: 1 * 60 * 1000,
-  max: 20,
+  windowMs: 15 * 60 * 1000,
+  max: 5,
   standardHeaders: true,
   legacyHeaders: false,
   handler: (req, res) => {
@@ -687,19 +687,28 @@ app.get('/dashboard', isAuthenticated, async (req, res) => {
       search: ''
     });
     
+	const streams = initialStreamsData.streams || [];
+	const activeStreams = streams.filter(s => s.status === 'live').length;
+	const scheduledStreams = streams.filter(s => s.status === 'scheduled').length;
+	
     res.render('dashboard', {
-      title: 'Dashboard',
-      active: 'dashboard',
-      user: user,
-      youtubeConnected: isYoutubeConnected,
-      youtubeChannels: youtubeChannels,
-      youtubeChannelName: defaultChannel?.channel_name || '',
-      youtubeChannelThumbnail: defaultChannel?.channel_thumbnail || '',
-      youtubeSubscriberCount: defaultChannel?.subscriber_count || '0',
-      hasYoutubeCredentials: hasYoutubeCredentials,
-      initialStreams: JSON.stringify(initialStreamsData.streams),
-      initialPagination: JSON.stringify(initialStreamsData.pagination)
-    });
+		title: 'Dashboard',
+		active: 'dashboard',
+		user: user,
+
+	  youtubeConnected: isYoutubeConnected,
+	  youtubeChannels: youtubeChannels,
+	  youtubeChannelName: defaultChannel?.channel_name || '',
+	  youtubeChannelThumbnail: defaultChannel?.channel_thumbnail || '',
+	  youtubeSubscriberCount: defaultChannel?.subscriber_count || '0',
+	  hasYoutubeCredentials: hasYoutubeCredentials,
+
+	  initialStreams: JSON.stringify(initialStreamsData.streams),
+	  initialPagination: JSON.stringify(initialStreamsData.pagination),
+
+	  activeStreams: activeStreams,
+	  scheduledStreams: scheduledStreams
+	});
   } catch (error) {
     console.error('Dashboard error:', error);
     res.redirect('/login');

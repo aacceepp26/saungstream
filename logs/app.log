@@ -1,0 +1,62 @@
+2026-03-06T18:07:22.142Z [LOG] Logger initialized. Output will be written to console and logs/app.log
+2026-03-06T18:07:29.084Z [LOG] Database tables initialized successfully
+2026-03-06T18:07:29.087Z [LOG] SaungStream running at:
+2026-03-06T18:07:29.087Z [LOG]   http://100.117.14.17:7575
+2026-03-06T18:07:29.088Z [LOG]   http://192.168.1.7:7575
+2026-03-06T18:07:29.089Z [LOG] [RotationService] Initializing rotation service...
+2026-03-06T18:07:36.529Z [ERROR] Error: secret option required for sessions
+    at session (F:\Projects\.YOUTUBE\.Learning\.HUSTLE\saungstream-main-update-20260306\node_modules\express-session\index.js:211:12)
+    at Layer.handle [as handle_request] (F:\Projects\.YOUTUBE\.Learning\.HUSTLE\saungstream-main-update-20260306\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\Projects\.YOUTUBE\.Learning\.HUSTLE\saungstream-main-update-20260306\node_modules\express\lib\router\index.js:328:13)
+    at F:\Projects\.YOUTUBE\.Learning\.HUSTLE\saungstream-main-update-20260306\node_modules\express\lib\router\index.js:286:9
+    at router.process_params (F:\Projects\.YOUTUBE\.Learning\.HUSTLE\saungstream-main-update-20260306\node_modules\express\lib\router\index.js:346:12)
+    at next (F:\Projects\.YOUTUBE\.Learning\.HUSTLE\saungstream-main-update-20260306\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (F:\Projects\.YOUTUBE\.Learning\.HUSTLE\saungstream-main-update-20260306\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (F:\Projects\.YOUTUBE\.Learning\.HUSTLE\saungstream-main-update-20260306\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\Projects\.YOUTUBE\.Learning\.HUSTLE\saungstream-main-update-20260306\node_modules\express\lib\router\index.js:328:13)
+    at F:\Projects\.YOUTUBE\.Learning\.HUSTLE\saungstream-main-update-20260306\node_modules\express\lib\router\index.js:286:9
+2026-03-06T18:07:52.809Z [LOG] SIGINT received, shutting down gracefully...
+2026-03-06T18:08:00.531Z [LOG] Logger initialized. Output will be written to console and logs/app.log
+2026-03-06T18:08:01.878Z [LOG] Database tables initialized successfully
+2026-03-06T18:08:01.881Z [LOG] SaungStream running at:
+2026-03-06T18:08:01.882Z [LOG]   http://100.117.14.17:7575
+2026-03-06T18:08:01.882Z [LOG]   http://192.168.1.7:7575
+2026-03-06T18:08:01.883Z [LOG] [RotationService] Initializing rotation service...
+2026-03-06T18:08:32.935Z [LOG] Validation errors: [
+  {
+    type: 'field',
+    value: 'admin123!',
+    msg: 'Password must contain at least one uppercase letter',
+    path: 'password',
+    location: 'body'
+  }
+]
+2026-03-06T18:08:44.358Z [LOG] User created successfully with ID: a552e628-e70a-4440-a3a0-74faaf472910
+2026-03-06T18:08:44.358Z [LOG] Setup account - Using user ID from database: a552e628-e70a-4440-a3a0-74faaf472910
+2026-03-06T18:08:44.358Z [LOG] Setup account - Session userId set to: a552e628-e70a-4440-a3a0-74faaf472910
+2026-03-06T18:09:05.060Z [LOG] User created successfully with ID: fc779c9a-c32b-401a-8cc9-dadcc8aa9235
+2026-03-06T18:09:13.602Z [LOG] User created successfully with ID: 6ae24da6-e4c4-44f8-91d3-5f7183c7b805
+2026-03-06T18:35:04.557Z [LOG] SIGINT received, shutting down gracefully...
+2026-03-06T18:35:53.916Z [LOG] Logger initialized. Output will be written to console and logs/app.log
+2026-03-06T18:35:59.651Z [LOG] Database tables initialized successfully
+2026-03-06T18:35:59.654Z [LOG] SaungStream running at:
+2026-03-06T18:35:59.654Z [LOG]   http://100.117.14.17:7575
+2026-03-06T18:35:59.654Z [LOG]   http://192.168.1.7:7575
+2026-03-06T18:35:59.657Z [LOG] [RotationService] Initializing rotation service...
+2026-03-06T18:36:25.009Z [LOG] User created successfully with ID: 108f5b55-366d-43fd-afdf-b31428f69449
+2026-03-06T18:36:25.009Z [LOG] Setup account - Using user ID from database: 108f5b55-366d-43fd-afdf-b31428f69449
+2026-03-06T18:36:25.010Z [LOG] Setup account - Session userId set to: 108f5b55-366d-43fd-afdf-b31428f69449
+2026-03-06T18:38:39.569Z [LOG] Logger initialized. Output will be written to console and logs/app.log
+2026-03-06T18:38:40.996Z [LOG] Database tables initialized successfully
+2026-03-06T18:38:40.999Z [LOG] SaungStream running at:
+2026-03-06T18:38:40.999Z [LOG]   http://100.117.14.17:7575
+2026-03-06T18:38:41.000Z [LOG]   http://192.168.1.7:7575
+2026-03-06T18:38:41.001Z [LOG] [RotationService] Initializing rotation service...
+2026-03-06T18:38:49.671Z [LOG] User created successfully with ID: a5907332-66bc-4342-ac9d-15930340ac50
+2026-03-06T19:00:39.240Z [LOG] Logger initialized. Output will be written to console and logs/app.log
+2026-03-06T19:00:40.633Z [LOG] Database tables initialized successfully
+2026-03-06T19:00:40.636Z [LOG] SaungStream running at:
+2026-03-06T19:00:40.636Z [LOG]   http://100.117.14.17:7575
+2026-03-06T19:00:40.637Z [LOG]   http://192.168.1.7:7575
+2026-03-06T19:00:40.638Z [LOG] [RotationService] Initializing rotation service...
+2026-03-06T19:04:23.421Z [LOG] SIGINT received, shutting down gracefully...
