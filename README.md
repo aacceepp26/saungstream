@@ -1,46 +1,3 @@
-<div align="center">
-
-![logo](https://github.com/user-attachments/assets/83d95886-2fbb-45c7-986a-e6c4d053bc55)
-
-## StreamFlow: Web-Based Multi-Platform Streaming
-
-[![Version](https://img.shields.io/badge/version-2.2.0-blue.svg)](https://github.com/bangtutorial/streamflow/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/bangtutorial/streamflow/blob/main/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bangtutorial/streamflow/blob/main/CONTRIBUTING.md)
-[![GitHub Stars](https://img.shields.io/github/stars/bangtutorial/streamflow?style=social)](https://github.com/bangtutorial/streamflow/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/bangtutorial/streamflow?style=social)](https://github.com/bangtutorial/streamflow/network/members)
-
-**StreamFlow** adalah platform live streaming berbasis web yang powerful dan mudah digunakan. Streaming ke YouTube, Facebook, dan platform RTMP lainnya secara bersamaan dengan satu aplikasi. Dilengkapi dengan video management, scheduled streaming, dan real-time monitoring untuk pengalaman streaming yang profesional.
-
-[🚀 Installation](#-quick-installation) • [📖 Documentation](#-manual-installation) • [🐳 Docker](#-docker-deployment) • [🪛 Troubleshooting](#-troubleshooting) • [💬 Community](https://github.com/bangtutorial/streamflow/discussions)
-
-![screenshot](https://github.com/user-attachments/assets/fef1c0a5-04f6-41ae-8ea1-5eb1fff13a22)
-
-
-
-</div>
-
----
-
-## ✨ Fitur Utama
-
-- **Multi-Platform Streaming** - Streaming ke berbagai platform populer secara bersamaan
-- **Video Gallery** - Kelola koleksi video dengan antarmuka yang intuitif
-- **Upload Video** - Upload dari local storage atau import langsung dari Google Drive
-- **Scheduled Streaming** - Jadwalkan streaming dengan pengaturan waktu yang fleksibel
-- **Advanced Settings** - Kontrol penuh untuk bitrate, resolusi, FPS, dan orientasi video
-- **Real-time Monitoring** - Monitor status streaming dengan dashboard real-time
-- **Video Analytics** - Pantau statistik dan performa video langsung dari aplikasi
-- **Responsive UI** - Antarmuka modern yang responsif di semua perangkat
-
-## 💻 System Requirements
-
-- **Node.js** v18 atau versi terbaru
-- **FFmpeg** untuk video processing
-- **SQLite3** (sudah termasuk dalam package)
-- **VPS/Server** dengan minimal 1 Core CPU & 1GB RAM
-- **Port** 7575 (dapat disesuaikan di file [.env](.env))
-
 ## ⚡ Quick Installation
 
 Untuk instalasi otomatis, jalankan perintah berikut:
@@ -316,5 +273,6 @@ pm2 restart streamflow
 
 ---
 © 2026 - [Bang Tutorial](https://youtube.com/bangtutorial)
+
 
 
